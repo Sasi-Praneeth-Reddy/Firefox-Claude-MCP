@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "MCP Browser Bridge",
+  "version": "0.1.0",
+  "description": "Connects this browser to a local MCP server so Claude can read and act in your tabs.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-mcp-bridge-dec1c04880@local",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["websiteContent", "browsingActivity"]
+      }
+    }
+  },
+  "permissions": ["tabs", "<all_urls>"],
+  "background": { "scripts": ["background.js"], "persistent": true },
+  "browser_action": { "default_title": "MCP Browser Bridge: not connected" }
+}

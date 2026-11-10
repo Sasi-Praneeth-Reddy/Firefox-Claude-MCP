@@ -1,0 +1,17 @@
+{
+  "name": "firefox-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets Claude control your own Firefox through a companion extension",
+  "type": "module",
+  "bin": {
+    "firefox-mcp": "index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "ws": "^8.22.2",
+    "zod": "^4.6.7"
+  }
+}
